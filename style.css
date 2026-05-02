@@ -1,0 +1,213 @@
+/* =========================================
+   1. PENGATURAN DASAR & WARNA KHUSUS
+========================================= */
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+.bg-light { background-color: #f7faff !important; }
+.bg-gray-900 { background-color: #111827 !important; }
+.bg-gray-800 { background-color: #1f2937 !important; }
+.max-w-custom {
+    max-width: 1280px;
+}
+/* =========================================
+   2.ANCHOR LINKS
+========================================= */
+html {
+    scroll-behavior: smooth; 
+}
+.scroll-mt {
+    scroll-margin-top: 120px; 
+}
+/* =========================================
+   3. NAVBAR & PENCARIAN
+========================================= */
+.custom-navbar {
+    background-color: #0b234d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.nav-hover:hover {
+    color: #ffd100 !important;
+}
+.search-form-custom {
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 220px;
+}
+.search-form-custom input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.custom-dropdown {
+    background-color: #1e293b;
+    border: none;
+    min-width: 250px;
+    margin-top: 10px;
+}
+.custom-dropdown .dropdown-item {
+    padding: 10px 20px;
+    transition: all 0.2s;
+    color: #f8f9fa;
+}
+.custom-dropdown .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffd100;
+}
+/* =========================================
+   4. UKURAN GAMBAR (IMAGE FITTING) & KOTAK
+========================================= */
+.hero-main-card {
+    min-height: 500px;
+}
+.hero-img {
+    height: 100%;
+    object-fit: cover;
+}
+.custom-profile-img-box {
+    height: 450px; 
+}
+.custom-hero-service-box {
+    height: 400px;
+}
+.rounded-top-end-4 {
+    border-top-right-radius: 1rem !important;
+}
+.backdrop-blur {
+    backdrop-filter: blur(8px);
+}
+.card-img-sm {
+    height: 200px;
+    object-fit: cover;
+}
+.custom-dark-card {
+    background-color: #1e293b !important;
+}
+/* =========================================
+   5. EFEK KACA TRANSPARAN 
+========================================= */
+.overlay-glass {
+    background-color: rgba(31, 41, 55, 0.9) !important; 
+    backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+.tracking-input:focus {
+    background-color: #111827 !important; 
+    color: white !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 209, 0, 0.25) !important; 
+    border-color: #ffd100 !important;
+}
+.tracking-input::placeholder {
+    color: #6b7280; 
+}
+
+/* =========================================
+   6. ANIMASI & EFEK HOVER KUSTOM
+========================================= */
+.hover-float {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-float:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+}
+.link-hover-warning {
+    transition: color 0.2s ease;
+}
+.link-hover-warning:hover {
+    color: #ffd100 !important;
+}
+.help-btn-custom {
+    background-color: #1f2937;
+    color: #ffd100;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.help-btn-custom:hover {
+    background-color: transparent !important;
+    color: #1f2937 !important;
+    border-color: #1f2937 !important;
+}
+
+/* =========================================
+   7. TENTANG KAMI & LAYANAN - ACCORDION
+========================================= */
+.custom-accordion .accordion-item {
+    background-color: #1e293b; 
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; 
+    border-radius: 12px !important; 
+    overflow: hidden; 
+    transition: background-color 0.3s ease; 
+}
+.custom-accordion .accordion-item:hover {
+    background-color: #2a374a; 
+}
+.custom-accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+.custom-accordion .accordion-button {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    padding: 1.25rem 1.5rem; 
+    font-size: 1.1rem;
+}
+.custom-accordion .accordion-button::after {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    transition: transform 0.3s ease; 
+}
+.custom-accordion .accordion-body {
+    background-color: transparent !important;
+    color: #d1d5db; 
+    padding: 0 1.5rem 1.5rem 1.5rem; 
+    border-top: none; 
+}
+
+/* =========================================
+   8. FOOTER
+========================================= */
+.footer-custom {
+    background-color: #111827; 
+    color: #ffffff;
+}
+.footer-link {
+    color: #d1d5db; 
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: text-decoration 0.2s ease, color 0.2s ease;
+}
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer-link-small {
+    color: #9ca3af; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+.footer-link-small:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* =========================================
+   9. KARTU BERITA
+========================================= */
+.news-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-card:hover {
+    transform: translateY(-8px);
+}
+.news-card .card-img-top {
+    transition: transform 0.4s ease;
+}
+.news-card:hover .card-img-top {
+    transform: scale(1.05); 
+}
